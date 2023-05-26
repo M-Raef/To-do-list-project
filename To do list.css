@@ -1,0 +1,118 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #352f5b;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(to top, #352f5b , rgb(255,255,255,0.30));
+  /*0.30 هذه سوف تتحكم في الشفافية*/
+}
+.task {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70vw;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  /* From https://css.glass you can chose the design*/
+  background: rgba(172, 214, 221, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31 38 135 / 37%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(84, 107, 151, 0.71);
+  border-bottom: 3px solid #fff;
+}
+
+p{
+    font-size: 20px;
+}
+.icon{
+    font-size: 24px;
+}
+.icon:hover{
+    font-size: 28px;
+    transition: 0.3s;
+    cursor: pointer; /* من اجل تغير شكل الماوس لما اعملن هفر */
+}
+.icon-star, .icon-trash{
+    opacity: 0.4;
+}
+.icon-star:hover{
+    color: orange;
+    opacity: 1;
+}
+.icon-trash{
+    margin-right: 10px;
+
+}
+.icon-trash:hover{
+    color: rgb(255, 242, 217);
+    opacity: 1;
+}
+.icon-sad2{
+    color: rgb(247, 180, 57) ;
+
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+form{
+    text-align: center;
+    margin-bottom: 200px;
+}
+input{
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 35vw;
+    font-size: 20px;
+    text-align: center;
+}
+button{all:unset}
+.icon-upload{
+    font-size: 40px;
+    margin-left: 17px;
+    position: relative; /*changes the position of the element relative to the parent element and relative to itself and where it would usually be in the regular document flow of the page لانه عنصر انلاين فما رح ينفع انه نظبطه من خلال المارجن والبادينغ رح نحطله هاد الكود ويلي رح  */
+    top: 9px;
+
+}
+.icon-upload:hover{
+    font-size: 45px;
+    transition:0.2s ;
+    color: rgb(160, 160, 160);
+}
+/*from js*/
+.dn{
+    display: none;
+}
+.icon-heart{
+    font-size: 23px;
+    color: red;
+}
+.icon-heart:hover{
+    font-size: 28px;
+    transition: 0.2s;
+}
+.finish{
+    text-decoration-line:line-through ;/* this code to make a line above the text the done code he make style to the line*/
+    text-decoration-style:wavy ;
+}
+.orange{
+    color: orange;
+    opacity: 1;
+}
